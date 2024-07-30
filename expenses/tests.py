@@ -5,6 +5,7 @@ from rest_framework import status
 from rest_framework.test import APIClient
 from .models import User, Expense, ExpenseParticipant
 
+# Test case for user model
 class UserTests(TestCase):
     def setUp(self):
         self.client = APIClient()
@@ -14,6 +15,7 @@ class UserTests(TestCase):
             "mobile_number": "1234567890"
         }
 
+    # Test for creating a user
     def test_create_user(self):
         #print(get_resolver().reverse_dict)  # Debug print to check all registered URL patterns
         response = self.client.post(reverse('user-list'), self.user_data, format='json')
@@ -21,6 +23,7 @@ class UserTests(TestCase):
         self.assertEqual(User.objects.count(), 1)
         self.assertEqual(User.objects.get().email, 'john@example.com')
 
+# Test case for Expense model
 class ExpenseTests(TestCase):
     def setUp(self):
         self.client = APIClient()
@@ -35,6 +38,7 @@ class ExpenseTests(TestCase):
             ]
         }
 
+    # Test for creating an expense
     def test_create_expense(self):
         response = self.client.post(reverse('expense-list'), self.expense_data, format='json')
         print(response.status_code)  # Debug print to check response status code
