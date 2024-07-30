@@ -1,42 +1,42 @@
 SetUp and Installation: 
 1.	Clone the Repository:
    
-      	         git clone <repository-url>
+      	         git clone repository-url
 
-      	         cd <repository-directory>
+      	         cd repository-directory
 
-3.	Create a Virtual Environment:
+2.	Create a Virtual Environment:
    
-	         python -m venv env
+      	         python -m venv env
 
-5.	Activate Virtual Environment:
+3.	Activate Virtual Environment:
    
-	         env\Scripts\activate
+      	         env\Scripts\activate
 
-7.	Install Dependencies:
+4.	Install Dependencies:
    
-	         pip install -r requirements.txt
+      	         pip install -r requirements.txt
 
-Ensure that “ requirements.txt  “ inclue:
+      Ensure that “ requirements.txt  “ inclue:
 
            Django>=4.0, <5.0
            
            djangorestframework>=3.14,<4.0
 
-9.	Apply Migration:
+5.	Apply Migration:
     
-	          python manage.py migrate
+      	          python manage.py migrate
 
-11.	Create a superuser (Admin User):
+6.	Create a superuser (Admin User):
     
-	          python manage.py createsuperuser
+      	          python manage.py createsuperuser
 
-13.	Run Development Server:
+7.	Run Development Server:
     
-	          python manage.py runserver
+      	          python manage.py runserver
 
 Testing:
 
 To run test cases:
 
-	          python manage.py test
+   	          python manage.py test
