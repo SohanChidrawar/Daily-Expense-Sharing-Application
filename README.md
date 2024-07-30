@@ -27,14 +27,15 @@ SetUp and Installation:
 
 5.	Apply Migration:
     
-      	          python manage.py migrate
+      	          python manage.py make migration
+  	
   	   	          python manage.py migrate
 
-6.	Create a superuser (Admin User):
+7.	Create a superuser (Admin User):
     
       	          python manage.py createsuperuser
 
-7.	Run Development Server:
+8.	Run Development Server:
     
       	          python manage.py runserver
 
