@@ -26,6 +26,7 @@ SetUp and Installation:
 5.	Apply Migration:
     
       	          python manage.py migrate
+  	   	          python manage.py migrate
 
 6.	Create a superuser (Admin User):
     
@@ -39,4 +40,4 @@ Testing:
 
 To run test cases:
 
-   	          python manage.py test
+   	             python manage.py test
