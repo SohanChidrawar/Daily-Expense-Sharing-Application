@@ -23,6 +23,8 @@ SetUp and Installation:
            
            djangorestframework>=3.14,<4.0
 
+----> Go to expense folder and then run below command 
+
 5.	Apply Migration:
     
       	          python manage.py migrate
